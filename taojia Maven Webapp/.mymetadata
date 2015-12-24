@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="TaoJia Maven Webapp"
+  id="myeclipse.1449841279923"
+  context-root="/TaoJia"
+  j2ee-spec="6.0"
+  archive="TaoJia Maven Webapp.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

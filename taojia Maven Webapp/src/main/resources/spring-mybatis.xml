@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ <configuration>
+     <environments default="development">
+         <environment id="development">
+             <transactionManager type="JDBC" />
+             <!-- 配置数据库连接信息 -->
+             <dataSource type="POOLED">
+                 <property name="driver" value="com.mysql.jdbc.Driver" />
+                 <property name="url" value="jdbc:mysql://localhost:3306/taojia" />
+                 <property name="username" value="admin" />
+                 <property name="password" value="admin" />
+             </dataSource>
+         </environment>
+         
+     </environments>
+     
+     <mappers>
+         <!-- 注册userMapper.xml文件， 
+         userMapper.xml位于me.gacl.mapping这个包下，所以resource写成me/gacl/mapping/userMapper.xml-->
+         <mapper resource="com/taojia/app/Dao/UserDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/SchoolDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/CoachDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/CoachCommentDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/SchoolCommentDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/UserOrderDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/CouponsDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/MyPackageDao.xml"/>
+         <mapper resource="com/taojia/app/Dao/FeedBackDao.xml"/>
+          <mapper resource="com/taojia/app/Dao/CampDao.xml"/>
+   </mappers>
+   
+</configuration>
